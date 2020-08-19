@@ -5,10 +5,10 @@ int gcd(int num1, int num2); // 최대공약수를 반환하는 함수 gcd의 �
 
 int main() {
 
-	int num1{ 0 };
-	int den1{ 0 };
-	int num2{ 0 };
-	int den2{ 0 };
+	int num1;
+	int den1;
+	int num2;
+	int den2;
 
 	int num3{ 0 };  // 더한 결과의 분자
 	int den3{ 0 };	// 더한 결과의 분모
@@ -63,7 +63,7 @@ int gcd(int num1, int num2) {
 	//num1이 num2로 나누어 떨어질 때까지 반복하기
 }
 
-
+//자리 바꿀 필요 X
 //int gcd(int num1, int num2) {
 //
 //	if (num1 % num2 == 0) {
