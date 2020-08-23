@@ -1,3 +1,5 @@
+//분수 계산
+
 #include <iostream>
 using namespace std;
 
@@ -44,35 +46,35 @@ int main() {
 
 //gcd 함수 정의
 
+// int gcd(int num1, int num2) {
+
+// 	int a{ 0 };
+
+// 	if (num1 < num2) {
+// 		a = num1;
+// 		num1 = num2;
+// 		num2 = a;
+// 	} // num1 >= num2 가 아닌 경우 자리 바꾸기
+
+// 	if (num1 % num2 == 0) {
+// 		return num2;	//num1이 num2로 나누어 떨어지는 경우 num2가 최대공약수, num2 반환하고 재귀함수 벗어남
+// 	}
+// 	else {
+// 		return gcd(num2, num1 % num2);
+// 	}
+// 	//num1이 num2로 나누어 떨어질 때까지 반복하기
+// }
+
+//자리 바꿀 필요 X
 int gcd(int num1, int num2) {
 
-	int a{ 0 };
-
-	if (num1 < num2) {
-		a = num1;
-		num1 = num2;
-		num2 = a;
-	} // num1 >= num2 가 아닌 경우 자리 바꾸기
-
 	if (num1 % num2 == 0) {
-		return num2;	//num1이 num2로 나누어 떨어지는 경우 num2가 최대공약수, num2 반환하고 재귀함수 벗어남
+		return num2;
 	}
 	else {
 		return gcd(num2, num1 % num2);
 	}
-	//num1이 num2로 나누어 떨어질 때까지 반복하기
 }
-
-//자리 바꿀 필요 X
-//int gcd(int num1, int num2) {
-//
-//	if (num1 % num2 == 0) {
-//		return num2;
-//	}
-//	else {
-//		return gcd(num2, num1 % num2);
-//	}
-//}
 
 //반복문으로 구현
 
