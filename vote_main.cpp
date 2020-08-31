@@ -21,7 +21,8 @@ int main() {
 			IU.incrementCount();
 		}
 		else {
-			cout << "��ȿ" << endl;
+			cout << "¹«È¿" << endl;
+			count--;
 		}
 	}
 	cout << "\n" << pby.getName() << ": " << pby.getCount() << endl;
